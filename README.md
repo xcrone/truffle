@@ -12,7 +12,8 @@ Truffle with environment setting and multiple network migration.
 ## Setting Env
 <hr>
 
-Edit `env` file and set variable needed.
+Edit `env` file and set variable needed. <br />
+example:
 ```
 # Version
 COMPILER_VERSION=0.8.7
