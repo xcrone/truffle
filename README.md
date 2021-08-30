@@ -1,0 +1,80 @@
+# Truffle
+Truffle with environment setting and multiple network migration.
+
+<br />
+
+## Network supported
+<hr>
+
+- Local (localhost evm)
+- Ethereum Ropsten
+- Binance Testnet
+- Binance Mainnet
+
+<br />
+
+## Setting Env
+<hr>
+
+Edit `env` file and set variable needed.
+```
+# Version
+COMPILER_VERSION=0.8.7
+
+# Local
+GANACHE_SEED_PHASE="load program pill roof quarter dignity sausage scheme"
+PROVIDER_LOCAL=http://127.0.0.1:7545
+
+# TESTNET Deployment
+SECRET_WALLET=d46f1784083662995be12bd94g752ae414d3bfb
+PROVIDER_ROPSTEN=https://ropsten.infura.io/v3/847d1860447a4cd24252f33
+PROVIDER_BINANCE_TESTNET=https://data-seed-prebsc-1-s1.binance.org:8545/
+
+# MAINNET Deployment
+SECRET_WALLET_BINANCE_MAINNET_DEPLOYER=d46f1784083662995be12bd94g752ae414d3bfb
+PROVIDER_BINANCE_MAINNET=https://bsc-dataseed.binance.org/
+
+# CHAIN Explorer API
+API_KEY_ETHERSCAN=1VTD261N9BNHWX8DGY8Y6RQGRDIZNBD57X
+API_KEY_BSCSCAN=C2JZZ715578ZHDKS3XKNS4FWJD6PJZU81R
+```
+
+<br />
+
+## Documentation
+<hr>
+
+### 1. Compile
+```
+truffle compile
+```
+
+<br />
+
+### 2. Migrate
+Truffle migration is using format like `truffle migrate --network <network type> --reset`.
+
+List of network type:
+- development
+- ropsten
+- binanceTestnet
+- binanceMainnet
+
+example:
+```
+truffle migrate --network development --reset
+```
+
+<br />
+
+### 3. Verify
+Truffle verify is using format like `truffle run verify <contract name>@<contract address> --network <network type>`.
+
+example:
+```
+truffle run verify TokenAJX@0x946C030dC0c57Cdd88655Cf659C4ba49CD839887 --network development
+```
+
+<br />
+
+
