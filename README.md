@@ -2,7 +2,6 @@
 Truffle with environment setting and multiple network migration.
 
 ## Network supported
-<hr>
 
 - Local (localhost evm)
 - Ethereum Ropsten
@@ -10,7 +9,6 @@ Truffle with environment setting and multiple network migration.
 - Binance Mainnet
 
 ## Setting Env
-<hr>
 
 Edit `env` file and set variable needed. <br />
 example:
@@ -37,7 +35,6 @@ API_KEY_BSCSCAN=C2JZZ715578ZHDKS3XKNS4FWJD6PJZU81R
 ```
 
 ## Documentation
-<hr>
 
 ### 1. Compile
 ```
