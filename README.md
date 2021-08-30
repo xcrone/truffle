@@ -1,8 +1,6 @@
 # Truffle
 Truffle with environment setting and multiple network migration.
 
-<br />
-
 ## Network supported
 <hr>
 
@@ -10,8 +8,6 @@ Truffle with environment setting and multiple network migration.
 - Ethereum Ropsten
 - Binance Testnet
 - Binance Mainnet
-
-<br />
 
 ## Setting Env
 <hr>
@@ -39,8 +35,6 @@ API_KEY_ETHERSCAN=1VTD261N9BNHWX8DGY8Y6RQGRDIZNBD57X
 API_KEY_BSCSCAN=C2JZZ715578ZHDKS3XKNS4FWJD6PJZU81R
 ```
 
-<br />
-
 ## Documentation
 <hr>
 
@@ -48,8 +42,6 @@ API_KEY_BSCSCAN=C2JZZ715578ZHDKS3XKNS4FWJD6PJZU81R
 ```
 truffle compile
 ```
-
-<br />
 
 ### 2. Migrate
 Truffle migration is using format like `truffle migrate --network <network type> --reset`.
@@ -65,8 +57,6 @@ example:
 truffle migrate --network development --reset
 ```
 
-<br />
-
 ### 3. Verify
 Truffle verify is using format like `truffle run verify <contract name>@<contract address> --network <network type>`.
 
@@ -74,7 +64,4 @@ example:
 ```
 truffle run verify TokenAJX@0x946C030dC0c57Cdd88655Cf659C4ba49CD839887 --network development
 ```
-
-<br />
-
 
